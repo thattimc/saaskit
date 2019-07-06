@@ -1,0 +1,24 @@
+<% content_for :head do %>
+<% end %>
+<% content_for :content do %>
+  <body class="antialiased bg-white font-sans">
+    <div class="flex flex-col min-h-screen">
+      <div id="notice">
+        <%= render "shared/notices" %>
+      </div>
+
+      <header class="py-4 lg:py-10">
+        <div class="container mx-auto px-4">
+          <%= render "shared/navbar" %>
+        </div>
+      </header>
+
+      <%= yield %>
+      <%= render "shared/footer" %>
+    </div>
+    <div data-controller="smooth-scroll"></div>
+    <div data-controller="aos"></div>
+    <div data-controller="noty"></div>
+  </body>
+<% end %>
+<%= render template: "layouts/application" %>

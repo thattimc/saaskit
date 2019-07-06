@@ -1,0 +1,24 @@
+<% unless flash.empty? %>
+  <% flash.each do |key, value| %>
+    <% type = key.to_s.gsub('alert', 'error').gsub('notice', 'success') %>
+    new Noty ({
+      type: '<%= type %>',
+      layout: 'topRight',
+      timeout: '3000',
+      theme: 'sunset',
+      text: '<%= value %>'
+    }).show();
+  <% end %>
+<% end %>
+
+<% if @newsletter_form.errors.any? %>
+  <% @newsletter_form.errors.full_messages.each do |message| %>
+    new Noty ({
+      type: 'error',
+      layout: 'topRight',
+      timeout: '3000',
+      theme: 'sunset',
+      text: '<%= message %>'
+    }).show();
+  <% end %>
+<% end %>

@@ -1,0 +1,14 @@
+<% if newsletter_form.errors.any? %>
+  <div class="mb-6" role="alert">
+    <div class="text-base lg:text-lg xl:text-xl font-bold text-white bg-red-600 rounded-t px-4 py-2">
+      <%= "#{newsletter_form.errors.count} errors prohibited this #{newsletter_form.class.model_name.human.downcase} from being saved:" %>
+    </div>
+    <div class="text-base lg:text-lg xl:text-xl text-red-600 bg-red-100 border border-t-0 border-red-600 rounded-b px-4 py-3">
+      <ul>
+        <% newsletter_form.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>

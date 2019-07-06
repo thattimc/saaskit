@@ -1,0 +1,23 @@
+<footer class="bg-gray-800 py-4 lg:py-16">
+  <div class="container px-4 mx-auto">
+    <div class="flex flex-col lg:flex-row justify-center items-center">
+      <%= link_to root_path, class: "flex items-center mr-0 lg:mr-4 mb-4 lg:mb-0" do %>
+        <div class="mr-3">
+          <%= image_tag asset_pack_path("media/images/logo_white_symbol.svg"), class: "w-auto h-10 lg:h-12" %>
+        </div>
+        <div>
+          <h1 class="text-2xl font-extrabold text-white leading-none whitespace-no-wrap">SaaSKit</h1>
+        </div>
+      <% end %>
+      <div class="text-xs italic text-white lg:self-center mr-0 lg:mr-4 mb-4 lg:mb-0">brought you by</div>
+      <%= link_to root_path, class: "flex items-center mb-4 lg:mb-0" do %>
+        <div class="mr-3">
+          <%= image_tag asset_pack_path("media/images/tgav_logo_white_symbol.svg"), class: "w-auto h-10 lg:h-12" %>
+        </div>
+        <div>
+          <h1 class="text-2xl font-extrabold text-white leading-none whitespace-no-wrap">TGAV</h1>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</footer>

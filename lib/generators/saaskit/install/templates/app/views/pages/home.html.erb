@@ -1,0 +1,472 @@
+<main>
+  <section class="py-4 lg:py-16">
+    <div class="container px-4 mx-auto">
+      <div class="relative">
+        <h2 data-aos="fade-right" class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black tracking-tight leading-none mb-4 md:mb-5 lg:mb-6 xl:mb-8 md:w-3/5">
+          Building any SaaS business with ease
+        </h2>
+        <p data-aos="fade-down" data-aos-delay="100" class="text-base md:text-lg lg:text-xl xl:text-2xl mb-5 md:mb-6 lg:mb-8 xl:mb-12 md:w-2/5">
+          DRY (Don't repeat yourself) for developing the same features over and over again. Let building any SaaS platform in a week instead of months with SaaSKit.
+        </p>
+        <div class="flex flex-col sm:flex-row mb-4 sm:mb-0">
+          <%= link_to "Pro version", "#notify-me", data: { aos: "fade-up", "aos-delay": "200" }, class: "text-lg font-bold text-center text-white whitespace-no-wrap bg-brand-dark hover:bg-brand-darker rounded flex-1 sm:flex-initial px-6 py-3 mr-0 sm:mr-2 mb-2 sm:mb-0 transition-all transition-250 transition-ease" %>
+          <%= link_to "https://github.com/tgavhq/saaskit", data: { aos: "fade-up", "aos-delay": "250" }, class: "text-lg font-bold text-center text-brand-dark whitespace-no-wrap bg-brand-lighter hover:bg-brand rounded flex-1 sm:flex-initial px-6 py-3 mb-2 sm:mb-0 transition-all transition-250 transition-ease" do %>
+            <%= image_tag asset_pack_path("media/images/github.svg"), class: "inline-block align-text-bottom mr-2 w-6 h-auto" %>
+            View on Github
+          <% end %>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="150" class="md:absolute md:top-0 md:right-0 md:w-4/5 lg:w-3/4 xl:w-2/3 h-auto" style="z-index: -1;">
+          <%= image_tag asset_pack_path("media/images/pablo-done.png") %>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="features" class="py-4 lg:py-16">
+    <div class="container px-4 mx-auto">
+      <div class="mb-6 md:mb-8 lg:mb-10 xl:mb-12">
+        <h3 data-aos="zoom-in" class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black lg:text-center tracking-tight leading-none mb-2 md:mb-3 lg:mb-4 xl:mb-5">✨ Over <span class="text-brand-dark">28</span> features</h3>
+        <p data-aos="fade-down" data-aos-delay="100" class="text-base lg:text-lg xl:text-xl lg:text-center lg:mr-auto lg:ml-auto lg:w-2/3">It saves you a lot of time for not re-implement the same boilerplate code.</p>
+      </div>
+      <div data-controller="reveal" data-reveal-open="false" class="relative">
+        <div class="flex flex-wrap overflow-hidden h-120 after:empty after:absolute after:bottom-0 after:left-0 after:w-full after:h-120 after:bg-gradient-b-semi-transparent-white transition-height transition-250 transition-ease" data-target="reveal.content">
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/rails.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Ruby on Rails 6</h4>
+              <p class="text-base lg:text-lg xl:text-xl">SaaSkit is based on latest rails 6 rc1. That means you can now leverage new shine rails features like actiontext, actionmailbox.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/webpack.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Webpack</h4>
+              <p class="text-base lg:text-lg xl:text-xl">All the JS libraries are already integrated well with webpack, so feel free to import any modern JS libraries as other new kid does.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/stimulus.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Stimulus</h4>
+              <p class="text-base lg:text-lg xl:text-xl">Don't waste time to implement SPA while you have a choice to apply the sprinkle JS effect with our pre-made stimulus controllers.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/tailwind.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Tailwind</h4>
+              <p class="text-base lg:text-lg xl:text-xl">We handcrafted all ui components based on tailwindcss and result is it bring us a highly customizable design without fighting to override other css.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/layout-top-panel-6.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Landing Pages</h4>
+              <p class="text-base lg:text-lg xl:text-xl">SaaSKit not restricted to provide boilerplate backend code only. We even offer eye-catching landing pages for you to put your SaaS in day one.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/shield-protected.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Authentication <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">Well integrated with Devise to provide email authentication, email confirmation, forget password and account unlock features.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/facebook.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Social Login <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">By utilizing omniauth authentication, Facebook login is supported out of the box. It's easy to extend it to support more providers as you wish.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/user.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">User Impersonation <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">It's a handy feature to support your customers without asking their login credential every time to log in their account for supporting.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/layout-left-panel-1.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Dashboards <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">User and admin dashboards are off-the-shelf provided which saves you a lot of time for not design and coding your dashboard from the stretch.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/right-circle.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">User Onboarding <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">For helping your client to know more about your platform, we integrate user onboarding workflow, a helpful feature that every saas business must have.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/group.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Teams <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">Like Github, teams is the core concept in the SaaS platform. It allows you to add your team members and share resources within the same scope.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/shield-check.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Role-Based Permission <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">Well, integrate rolify and pundit gems, so that you can easily restrict the resource access per each role-based permission rules.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/repeat.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Subscription <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">As it's the core feature for every SaaS business, our platform is designed to support each team to have one or more subscriptions.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/credit-card.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Payments <span class="text-xs text-white align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">SaaS businesses are not limited to subscription billing. Sometimes we want to charge a one-time fee only. No worry, we got this cover as well.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/sale-2.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Coupons <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">There is no doubt everyone like discounts and coupons, so we already integrate it into our subscription billing and one-time payments workflow.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/file.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Invoices <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">Your customer can download their PDF invoices right inside the platform, besides it even send the monthly or one time invoices to your client e-mails automatically.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/stripe.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Stripe <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">It's the core payment gateway that we use for the subscription billing and one-time payments features. Now integrate the payment gateway is like a piece of cake.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/paypal.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Braintree/Paypal <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">As stripe does not support all countries in the world, that why we also integrate Braintree as it supports PayPal out of the box.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/outlet.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">API Support <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">Want to connect SaaSKit with your javascript or mobile clients. No problem, we already covered this and included all API interfaces for you.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/notifications-1.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Announcements <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">Create announcements and notify your customers about any new features or updates. Keep them updated, and they will appreciate this.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/address-book-2.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Mailing List Subscription</h4>
+              <p class="text-base lg:text-lg xl:text-xl">Easy to add a mailing list subscription to any page you want. Now supporting MailChimp, and more providers will be added soon.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/mail-opened.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Email Templates <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">We pre-designed email templates for use as transactional emails. So it will save you hours or days without design from the stretch.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/sending-mail.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Mailer <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">You can now set up the mail providers by using our pre-configured mail settings. Right now, we are supporting Mailgun, Postmark, Sendgrid and mandrill.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/chart-bar-1.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Analytics <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">We already pre-configured several analytics providers, including Google analytics, simple analytics, and segment. Just pick one, and you can start tracking right away.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/selected-file.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Error Logging <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">Stop hoping your users will report errors. Use one of the pre-configured error logging services to monitor and fix crashes in real time.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/layout-top-panel-6.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Custom Error Pages <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">We re-designed the custom error pages for you. Besides, you can even further customize those error pages to match your branding.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/display-1.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Test Coverage <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">We write tests to keep the SaaSKit codebase healthy. Besides this, we even provide Minitest or RSpec for you to choose. Just pick the one you like and get started.</p>
+            </div>
+          </div>
+          <div class="flex mb-3 md:mb-4 lg:mb-5 xl:mb-6 w-full lg:w-1/2">
+            <div class="mr-4 w-24">
+              <div class="flex items-center justify-center bg-brand-lighter rounded-full p-2 w-20 h-20">
+                <%= image_tag asset_pack_path("media/images/cloud-upload.svg"), class: "w-auto h-8" %>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">Deployment <span class="text-xs text-white align-middle lg:align-top bg-brand-dark rounded-full px-2 py-1">Pro</span></h4>
+              <p class="text-base lg:text-lg xl:text-xl">Deploying SaaSKit to the cloud is just a piece of cake. We will guide you through to deploy your saaskit to AWS, Google Cloud, or even digital ocean if you want a predictable fee.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <%= link_to "Show more 👇", "javascript:void(0)", class: "text-base lg:text-lg xl:text-xl font-bold hover:text-brand-dark transition-all transition-250 transition-ease", data: { action: "reveal#show" } %>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="test-drive" class="pt-4 lg:pt-16">
+    <div class="container px-4 mx-auto">
+      <div class="mb-6 md:mb-8 lg:mb-10 xl:mb-12">
+        <h3 data-aos="zoom-in" class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black lg:text-center tracking-tight leading-none mb-2 md:mb-3 lg:mb-4 xl:mb-5">🚗 Want a test drive?</h3>
+        <p data-aos="fade-down" data-aos-delay="100" class="text-base lg:text-lg xl:text-xl lg:text-center lg:mr-auto lg:ml-auto lg:w-2/3">It's just one command to get started!</p>
+      </div>
+      <div data-aos="zoom-in-up" data-aos-delay="150" class="bg-gray-900 rounded-lg px-12 py-8 mr-auto ml-auto w-full lg:w-3/5 h-auto shadow-xl">
+        <div data-controller="typed">
+          <span class="text-brand-lighter">$</span>
+          <div id="typed-strings">
+            <p>rails new appname --database=postgresql -m https://link.saaskitapp.com/rqp ^6000</p>
+          </div>
+          <span class="text-white text-base lg:text-lg xl:text-xl" id="typed"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-200">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 64"><path fill="currentColor" d="M749.72,63C409.32,68.45,117.88,44.82,0,6.75V64H1440V0h-2.73C1297,33.39,1041.69,58.3,749.72,63Z"/></svg>
+  </section>
+  <section id="pricing" class="bg-gray-200 py-4 lg:py-16">
+    <div class="container px-4 mx-auto">
+      <div class="mb-6 md:mb-8 lg:mb-10 xl:mb-12">
+        <h3 data-aos="zoom-in" class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:text-center font-black tracking-tight leading-none mb-2 md:mb-3 lg:mb-4 xl:mb-5">💵 A lifetime of SaaSKit with a year of updates</h3>
+        <p data-aos="fade-down" data-aos-delay="100" class="text-base lg:text-lg xl:text-xl lg:text-center lg:mr-auto lg:ml-auto lg:w-2/3">Pick a single license for one site or unlimited licenses if you want to use it with multiple sites.</p>
+      </div>
+      <div class="flex flex-col lg:flex-row -mx-4">
+        <div data-aos="fade-up" data-aos-delay="150" class="flex flex-col justify-between border-gray-400	border-solid border rounded-lg mx-4 mb-4 lg:mb-0 lg:w-1/3 hover:bg-white hover:shadow-xl transition-all transition-250 transition-ease">
+          <div class="py-8 lg:py-16 px-5">
+            <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">🏠 OSS</h4>
+            <p class="text-base lg:text-lg xl:text-xl mb-2 md:mb-4 lg:mb-6 xl:mb-8">Perfect for creating a startup landing page with MailChimp mailing list subscription.</p>
+            <div class="font-black">Alway</div>
+            <div class="mb-2 md:mb-4 lg:mb-6 xl:mb-8">
+              <span class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black tracking-tight leading-none text-green-500">Free</span>
+            </div>
+            <ul class="mb-2 md:mb-4 lg:mb-6 xl:mb-8">
+              <li class="text-base lg:text-lg mb-1 md:mb-2">✅ Ruby on Rails 6</li>
+              <li class="text-base lg:text-lg xl:text-xl mb-1 md:mb-2">✅ Stimulus and Tailwind integration</li>
+              <li class="text-base lg:text-lg xl:text-xl mb-1 md:mb-2">✅ Eye-catching Landing Pages</li>
+              <li class="text-base lg:text-lg xl:text-xl mb-1 md:mb-2">✅ Mailing List Subscription</li>
+            </ul>
+          </div>
+          <div class="p-5">
+            <%= link_to "Get Started", root_path, class: "inline-block text-lg font-bold text-center text-white whitespace-no-wrap bg-brand-dark hover:bg-brand-darker rounded px-6 py-3 w-full transition-all transition-250 transition-ease" %>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col justify-between border-gray-400	border-solid border rounded-lg mx-4 mb-4 lg:mb-0 lg:w-1/3 hover:bg-white hover:shadow-xl transition-all transition-250 transition-ease">
+          <div class="py-8 lg:py-16 px-5">
+            <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">🏬 Pro</h4>
+            <p class="text-base lg:text-lg xl:text-xl mb-2 md:mb-4 lg:mb-6 xl:mb-8">Perfect for rails developers or makers who want to start SaaS platforms with a short period.</p>
+            <div class="font-black">Early bird price</div>
+            <div class="mb-2 md:mb-4 lg:mb-6 xl:mb-8">
+              <span class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black tracking-tight leading-none line-through text-gray-400">
+                $199
+              </span>
+              &nbsp;
+              <span class="text-xl md:text-2xl font-black align-top">$</span>
+              <span class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black tracking-tight leading-none text-green-500">
+                99
+              </span>
+            </div>
+            <ul>
+              <li class="text-base lg:text-lg mb-1 md:mb-2">✅ All features listed in OSS</li>
+              <li class="text-base lg:text-lg xl:text-xl mb-1 md:mb-2">✅ Authentication</li>
+              <li class="text-base lg:text-lg xl:text-xl mb-1 md:mb-2">✅ Teams</li>
+              <li class="text-base lg:text-lg xl:text-xl mb-1 md:mb-2">✅ Role-Based Permission</li>
+              <li class="text-base lg:text-lg xl:text-xl mb-1 md:mb-2">✅ Subscription</li>
+              <li class="text-base lg:text-lg xl:text-xl mb-1 md:mb-2">✅ Payments</li>
+              <li class="text-base lg:text-lg xl:text-xl mb-1 md:mb-2">✅ Coupons</li>
+              <li class="text-base lg:text-lg xl:text-xl mb-1 md:mb-2"><%= link_to "More Features", "#features", class: "hover:text-brand-dark transition-all transition-250 transition-ease" %> ️️☝️</li>
+            </ul>
+          </div>
+          <div class="p-5">
+            <%= link_to "Notify Me", "#notify-me", class: "inline-block text-lg font-bold text-center text-white whitespace-no-wrap bg-brand-dark hover:bg-brand-darker rounded px-6 py-3 w-full transition-all transition-250 transition-ease" %>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="250" class="flex flex-col justify-between border-gray-400	border-solid border rounded-lg mx-4 mb-4 lg:mb-0 lg:w-1/3 hover:bg-white hover:shadow-xl transition-all transition-250 transition-ease">
+          <div class="py-8 lg:py-16 px-5">
+            <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black tracking-tight leading-none mb-1 md:mb-2 lg:mb-3 xl:mb-4">🏢 Unlimited Pro</h4>
+            <p class="text-base lg:text-lg xl:text-xl mb-2 md:mb-4 lg:mb-6 xl:mb-8">Perfect for agencies or entrepreneurs who have multiple projects need to meet the deadline.</p>
+            <div class="font-black">Early bird price</div>
+            <div class="mb-2 md:mb-4 lg:mb-6 xl:mb-8">
+              <span class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black tracking-tight leading-none line-through text-gray-400">
+                $799
+              </span>
+              &nbsp;
+              <span class="text-xl md:text-2xl font-black align-top">$</span>
+              <span class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black tracking-tight leading-none text-green-500">
+                399
+              </span>
+            </div>
+            <ul>
+              <li class="text-base lg:text-lg mb-1 md:mb-2">✅ All features listed in Pro</li>
+              <li class="text-base lg:text-lg xl:text-xl mb-1 md:mb-2">✅ Unlimited Sites</li>
+            </ul>
+          </div>
+          <div class="p-5">
+            <%= link_to "Notify Me", "#notify-me", class: "inline-block text-lg font-bold text-center text-white whitespace-no-wrap bg-brand-dark hover:bg-brand-darker rounded px-6 py-3 w-full transition-all transition-250 transition-ease" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-800 bg-gray-200">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 64"><path fill="currentColor" d="M690.28,63c340.4,5.46,631.84-18.17,749.72-56.24V64H0V0H2.73C143,33.39,398.31,58.3,690.28,63Z"/></svg>
+  </section>
+  <section id="notify-me" class="bg-gray-800 py-4 lg:py-16">
+    <div class="container px-4 mx-auto">
+      <div class="mb-6 md:mb-8 lg:mb-10 xl:mb-12">
+        <h3 data-aos="zoom-in" class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:text-center text-white font-black tracking-tight leading-none mb-2 md:mb-3 lg:mb-4 xl:mb-5">✉️ Notify me when it's release</h3>
+        <p data-aos="fade-down" data-aos-delay="100" class="text-base lg:text-lg xl:text-xl lg:text-center text-white lg:mr-auto lg:ml-auto lg:w-2/3">Don't miss the early bird price deal. Join our mailing list to get notified!</p>
+      </div>
+      <div class="flex justify-center">
+        <%= form_with model: @newsletter_form, url: subscribe_path, class: "w-full lg:w-1/2" do |f| %>
+          <div id="errors">
+            <%= render "errors", newsletter_form: @newsletter_form %>
+          </div>
+          <div class="flex flex-col lg:flex-row">
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: true, class: "text-lg rounded flex-1 px-4 py-3 mr-0 mb-2 lg:mr-2 lg:mb-0 focus:outline-none focus:shadow-outline appearance-none transition-all transition-250 transition-ease" %>
+            <%= f.submit "Subscribe", class: "text-lg font-bold text-center text-white whitespace-no-wrap bg-brand-dark hover:bg-brand-darker rounded flex-initial px-6 py-3 cursor-pointer transition-all transition-250 transition-ease" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
+</main>

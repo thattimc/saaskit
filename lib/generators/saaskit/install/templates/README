@@ -1,0 +1,30 @@
+=======================================================================================================
+
+ ____                      ____    __  __      __
+/\  _`\                   /\  _`\ /\ \/\ \  __/\ \__
+\ \,\L\_\     __       __ \ \,\L\_\ \ \/'/'/\_\ \ ,_\
+ \/_\__ \   /'__`\   /'__`\\/_\__ \\ \ , < \/\ \ \ \/
+   /\ \L\ \/\ \L\.\_/\ \L\.\_/\ \L\ \ \ \\`\\ \ \ \ \_
+   \ `\____\ \__/.\_\ \__/.\_\ `\____\ \_\ \_\ \_\ \__\
+    \/_____/\/__/\/_/\/__/\/_/\/_____/\/_/\/_/\/_/\/__/
+
+Congraduration 🎉, all done 👏.
+
+1. Before you start rails server, Please config your secret credential and use the sample template located in
+`config/credentials.yml.sample` as the starting point.
+
+For development environment:
+EDITOR=vim rails credentials:edit --environment development
+
+For test environment:
+EDITOR=vim rails credentials:edit --environment test
+
+For production environment:
+EDITOR=vim rails credentials:edit
+
+2. To start the app:
+cd your_app
+bin/rails server
+Open browser with http://localhost:3000
+
+=======================================================================================================

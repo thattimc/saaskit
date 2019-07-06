@@ -1,0 +1,76 @@
+<style>
+  #hamburger-top {
+    height: 0.125rem;
+    top: 0rem;
+  }
+
+  #hamburger-middle {
+    height: 0.125rem;
+    top: 0.375rem;
+  }
+
+  #hamburger-buttom {
+    height: 0.125rem;
+    top: 0.75rem;
+  }
+
+  #hamburger-checkbox:checked ~ #menu {
+    height: 16rem;
+  }
+
+  #hamburger-checkbox:checked ~ #hamburger #hamburger-middle {
+    background-color: transparent;
+  }
+
+  #hamburger-checkbox:checked ~ #hamburger #hamburger-top {
+    top: 0.375rem;
+    transform: rotate(-45deg);
+  }
+
+  #hamburger-checkbox:checked ~ #hamburger #hamburger-buttom {
+    top: 0.375rem;
+    transform: rotate(45deg);
+  }
+
+  @media (min-width: 1024px) {
+    #hamburger-checkbox:checked ~ #menu {
+      height: 3rem;
+    }
+  }
+</style>
+<nav class="relative flex flex-col lg:flex-row lg:items-center lg:justify-between">
+  <%= link_to root_path, class: "flex items-center mb-4 lg:mb-0" do %>
+    <div class="mr-3">
+      <%= image_tag asset_pack_path("media/images/logo_color_symbol.svg"), class: "w-auto h-10 lg:h-12" %>
+    </div>
+    <div>
+      <h1 class="text-2xl font-extrabold leading-none whitespace-no-wrap">SaaSKit</h1>
+      <span class="hidden lg:inline text-lg text-gray-600 leading-none whitespace-no-wrap">SaaS starter kit for rails</span>
+    </div>
+  <% end %>
+  <%= check_box_tag "hamburger-checkbox", "", false, class: "hidden" %>
+  <%= label_tag "hamburger-checkbox", "", id: "hamburger", class: "lg:hidden absolute top-0 right-0 inline-block px-2 py-3 w-10 h-10 cursor-pointer select-none" do %>
+    <div class="relative">
+      <span id="hamburger-top" class="block absolute bg-black w-6 transition-transform transition-250 transition-ease-out"></span>
+      <span id="hamburger-middle" class="block absolute bg-black w-6 transition-bg transition-250 transition-ease-out"></span>
+      <span id="hamburger-buttom" class="block absolute bg-black w-6 transition-transform transition-250 transition-ease-out"></span>
+    </div>
+  <% end %>
+  <ul id="menu" class="flex flex-col h-0 lg:flex-row lg:h-12 overflow-hidden transition-all transition-250 transition-ease">
+    <li class="flex-none lg:ml-8 min-h-0">
+      <%= link_to "🏠 Home", root_path, class: "block text-lg hover:text-brand-darker whitespace-no-wrap py-2 lg:p-2 transition-all transition-250 transition-ease" %>
+    </li>
+    <li class="flex-none lg:ml-8 min-h-0">
+      <%= link_to "🚗 Test drive", "#test-drive", class: "block text-lg hover:text-brand-darker whitespace-no-wrap py-2 lg:p-2 transition-all transition-250 transition-ease" %>
+    </li>
+    <li class="flex-none lg:ml-8 min-h-0">
+      <%= link_to "✨ Features", "#features", class: "block text-lg hover:text-brand-darker whitespace-no-wrap py-2 lg:p-2 transition-all transition-250 transition-ease" %>
+    </li>
+    <li class="flex-none lg:ml-8 min-h-0">
+      <%= link_to "💵 Pricing", root_path, class: "block text-lg hover:text-brand-darker whitespace-no-wrap py-2 lg:p-2 transition-all transition-250 transition-ease" %>
+    </li>
+    <li class="flex-none mt-4 lg:mt-0 lg:ml-8 xl:ml-16 min-h-0">
+      <%= link_to "Pro version", "#notify-me", class: "block text-lg font-bold text-center text-white whitespace-no-wrap bg-brand-dark hover:bg-brand-darker rounded px-6 py-2 transition-all transition-250 transition-ease" %>
+    </li>
+  </ul>
+</nav>
