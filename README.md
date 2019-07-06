@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/saaskit.svg)](https://badge.fury.io/rb/saaskit)
+
 # SaaSKit
 
 SaaSKit is the Rails SaaS starter kit for building your SaaS business.
