@@ -37,6 +37,11 @@ module Saaskit
                         /config.require_master_key = true/
       end
 
+      def application_css_in_assets_pipeline
+        remove_file "app/assets/stylesheets/application.css"
+        copy_file "app/assets/stylesheets/application.scss"
+      end
+
       def install_stimulus
         run "yarn add stimulus"
         copy_file "app/javascript/controllers/index.js"
@@ -70,11 +75,22 @@ module Saaskit
       def install_aos_controller
         run "yarn add aos@next"
         copy_file "app/javascript/controllers/aos_controller.js"
+        append_to_file "app/assets/stylesheets/application.scss" do
+          <<~CODE
+            @import "aos/dist/aos";
+          CODE
+        end
       end
 
       def install_noty_controller
         run "yarn add noty"
         copy_file "app/javascript/controllers/noty_controller.js"
+        append_to_file "app/assets/stylesheets/application.scss" do
+          <<~CODE
+            @import "noty/lib/noty";
+            @import "noty/lib/themes/sunset";
+          CODE
+        end
       end
 
       def install_tailwindcss
