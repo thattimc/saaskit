@@ -33,9 +33,9 @@ module Mailchimp
       begin
         @client.lists(options[:list_id]).members(email_hash).upsert(body: body)
       rescue Gibbon::MailChimpError => exception
-        OpenStruct.new(success?: false, error: "Subscribe failed")
+        OpenStruct.new(success?: false, error: "Subscribe failed", detail: exception.detail)
       else
-        OpenStruct.new(success?: true, error: nil)
+        OpenStruct.new(success?: true, error: nil, detail: nil)
       end
     end
 
