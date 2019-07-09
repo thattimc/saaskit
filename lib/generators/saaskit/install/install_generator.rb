@@ -37,11 +37,6 @@ module Saaskit
                         /config.require_master_key = true/
       end
 
-      def application_css_in_assets_pipeline
-        remove_file "app/assets/stylesheets/application.css"
-        copy_file "app/assets/stylesheets/application.scss"
-      end
-
       def install_stimulus
         run "yarn add stimulus"
         copy_file "app/javascript/controllers/index.js"
@@ -50,45 +45,6 @@ module Saaskit
             // Tell webpacker to require stimulus
             require("stimulus")
             import 'controllers'
-          CODE
-        end
-      end
-
-      def install_notice_controller
-        copy_file "app/javascript/controllers/notice_controller.js"
-      end
-
-      def install_typed_controller
-        run "yarn add typed.js"
-        copy_file "app/javascript/controllers/typed_controller.js"
-      end
-
-      def install_reveal_controller
-        copy_file "app/javascript/controllers/reveal_controller.js"
-      end
-
-      def install_smooth_scroll_controller
-        run "yarn add smooth-scroll"
-        copy_file "app/javascript/controllers/smooth_scroll_controller.js"
-      end
-
-      def install_aos_controller
-        run "yarn add aos@next"
-        copy_file "app/javascript/controllers/aos_controller.js"
-        append_to_file "app/assets/stylesheets/application.scss" do
-          <<~CODE
-            @import "aos/dist/aos";
-          CODE
-        end
-      end
-
-      def install_noty_controller
-        run "yarn add noty"
-        copy_file "app/javascript/controllers/noty_controller.js"
-        append_to_file "app/assets/stylesheets/application.scss" do
-          <<~CODE
-            @import "noty/lib/noty";
-            @import "noty/lib/themes/sunset";
           CODE
         end
       end
@@ -130,32 +86,38 @@ module Saaskit
         end
       end
 
+      def install_third_party_packages
+        run "yarn add typed.js"
+        run "yarn add smooth-scroll"
+        run "yarn add aos@next"
+        run "yarn add noty"
+      end
+
+      def install_stimulus_controllers
+        copy_file "app/javascript/controllers/notice_controller.js"
+        copy_file "app/javascript/controllers/typed_controller.js"
+        copy_file "app/javascript/controllers/reveal_controller.js"
+        copy_file "app/javascript/controllers/smooth_scroll_controller.js"
+        copy_file "app/javascript/controllers/aos_controller.js"
+        copy_file "app/javascript/controllers/noty_controller.js"
+      end
+
+      def import_third_party_css_into_assets_pipeline
+        remove_file "app/assets/stylesheets/application.css"
+        copy_file "app/assets/stylesheets/application.scss"
+      end
+
       def install_images
         gsub_file "app/javascript/packs/application.js",
                   /\/\/ const images/, "const images"
         gsub_file "app/javascript/packs/application.js",
                   /\/\/ const imagePath/, "const imagePath"
-
-        copy_file "app/javascript/images/logo_color_horizontal.svg"
-        copy_file "app/javascript/images/logo_color_stacked.svg"
-        copy_file "app/javascript/images/logo_color_symbol.svg"
-        copy_file "app/javascript/images/logo_white_horizontal.svg"
-        copy_file "app/javascript/images/logo_white_stacked.svg"
-        copy_file "app/javascript/images/logo_white_symbol.svg"
-        copy_file "app/javascript/images/tgav_logo_white_symbol.svg"
+        directory "app/javascript/images"
       end
 
-      def create_application_controller
-        copy_file "app/controllers/application_controller.rb", force: true
-      end
-
-      def create_application_layouts
-        copy_file "app/views/shared/_head.html.erb"
-        copy_file "app/views/shared/_notices.html.erb"
-        copy_file "app/views/shared/_navbar.html.erb"
-        copy_file "app/views/shared/_footer.html.erb"
-        copy_file "app/views/layouts/application.html.erb", force: true
-        copy_file "app/views/layouts/land.html.erb"
+      def install_application_shared_and_layouts
+        directory "app/views/shared"
+        directory "app/views/layouts", force: true
       end
 
       def create_application_helpers
@@ -167,36 +129,11 @@ module Saaskit
         copy_file "app/helpers/meta_tags_helper.rb"
       end
 
+      def create_application_controller
+        copy_file "app/controllers/application_controller.rb", force: true
+      end
+
       def install_pages
-        copy_file "app/javascript/images/pablo-done.png"
-        copy_file "app/javascript/images/github.svg"
-        copy_file "app/javascript/images/rails.svg"
-        copy_file "app/javascript/images/webpack.svg"
-        copy_file "app/javascript/images/stimulus.svg"
-        copy_file "app/javascript/images/tailwind.svg"
-        copy_file "app/javascript/images/layout-top-panel-6.svg"
-        copy_file "app/javascript/images/shield-protected.svg"
-        copy_file "app/javascript/images/facebook.svg"
-        copy_file "app/javascript/images/user.svg"
-        copy_file "app/javascript/images/layout-left-panel-1.svg"
-        copy_file "app/javascript/images/right-circle.svg"
-        copy_file "app/javascript/images/group.svg"
-        copy_file "app/javascript/images/shield-check.svg"
-        copy_file "app/javascript/images/repeat.svg"
-        copy_file "app/javascript/images/credit-card.svg"
-        copy_file "app/javascript/images/sale-2.svg"
-        copy_file "app/javascript/images/file.svg"
-        copy_file "app/javascript/images/stripe.svg"
-        copy_file "app/javascript/images/paypal.svg"
-        copy_file "app/javascript/images/outlet.svg"
-        copy_file "app/javascript/images/notifications-1.svg"
-        copy_file "app/javascript/images/address-book-2.svg"
-        copy_file "app/javascript/images/mail-opened.svg"
-        copy_file "app/javascript/images/sending-mail.svg"
-        copy_file "app/javascript/images/chart-bar-1.svg"
-        copy_file "app/javascript/images/selected-file.svg"
-        copy_file "app/javascript/images/display-1.svg"
-        copy_file "app/javascript/images/cloud-upload.svg"
         copy_file "app/forms/newsletter_form.rb"
         copy_file "app/adapters/mailchimp/base_adapter.rb"
         copy_file "app/models/concerns/coming_soon_pending_subscribable.rb"
