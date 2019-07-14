@@ -1,3 +1,6 @@
+<% content_for :head do %>
+<% end %>
+
 <main>
   <section class="py-4 lg:py-16">
     <div class="container px-4 mx-auto">
@@ -470,3 +473,9 @@
     </div>
   </section>
 </main>
+
+<% content_for :footer do %>
+  <div data-controller="smooth-scroll"></div>
+  <div data-controller="noty"></div>
+  <div data-controller="aos"></div>
+<% end %>
